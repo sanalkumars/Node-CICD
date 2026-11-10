@@ -13,7 +13,6 @@ const port = process.env.PORT || 3000;
 const clientBuildDirectory = path.resolve(currentDirectory, '../client/dist');
 const tasks = [];
 
-
 app.use(express.json({ limit: '10kb' }));
 
 app.get('/api/health', (_request, response) => {
